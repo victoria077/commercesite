@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .grid{
     display: grid;
 }
@@ -8,18 +13,19 @@
     background-position: center;
     position: relative;
     align-content: center;
+    background-image: url("./images/back.jpeg");
 }
 
-.main-header::before{
+/* .main-header::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #394951;
+    background-color: #596f7a;
     opacity: .92;
-}
+} */
 
 .header-content{
     z-index: 1;
@@ -33,8 +39,14 @@
     font-size: 60px;
     font-family: intro-grid, sans-serif;
     font-weight: normal;
-    margin: 20px 0;
+    margin-top: -170px;
     line-height: 1.5;
+}
+
+.subtitle{
+    margin-top: -70px;
+    text-transform: uppercase;
+    font-size: 40px;
 }
 
 .button{
@@ -185,6 +197,10 @@
     margin-bottom: 40px;
 }
 
+.video{
+    width: 100%;
+    height: auto;
+}
 
 .ready-right{
     padding-left: 40px;
@@ -282,6 +298,7 @@ input, textarea{
 
 }
 
+
 .main-footer{
     padding: 60px 0;
     background-color: #1b2429;
@@ -367,6 +384,11 @@ input, textarea{
         min-height: 48vh;
         font-size: 16px;
     }
+/* 
+    .video{
+        width: 400px;
+        height: 250px;
+    } */
 }
 
 @media only screen and (max-width: 768px){
@@ -421,12 +443,8 @@ input, textarea{
         grid-column: initial;
     }
 
-}
-
-@media only screen and (max-width: 480px){
- 
     .portfolio-section{
-        grid-template-columns:  1fr;
+        grid-template-columns: 1fr;
     }
  
     .portfolio-item{
@@ -444,8 +462,32 @@ input, textarea{
      .portfolio-item:nth-child(5){
          grid-column: initial;
      }
- 
+
+     .paragraph{
+       text-align: center;
+    }
+
+    .ready-left{
+       margin-left: 20px;
+    }
+
+    .video{
+        margin-left: -20px;
+    }
+}
+
+@media only screen and (max-width: 480px){
      .formsection form{
         grid-template-columns: 1fr;
+    }
+
+    .header-content h1{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    
+    .subtitle{
+        margin-top: -50px;
+        font-size: 20px;
     }
  }
