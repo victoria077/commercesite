@@ -16,17 +16,6 @@ body{
     background-image: url("./images/back.jpeg");
 }
 
-/* .main-header::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #596f7a;
-    opacity: .92;
-} */
-
 .header-content{
     z-index: 1;
     color: #fff;
@@ -477,7 +466,7 @@ input, textarea{
 }
 
 @media only screen and (max-width: 480px){
-     .formsection form{
+    .formsection form{
         grid-template-columns: 1fr;
     }
 
